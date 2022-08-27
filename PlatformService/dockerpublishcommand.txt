@@ -1,0 +1,16 @@
+docker build -t lucasarodrigues/platformservice .
+
+docker run -p 8080:80 -d lucasarodrigues/platformservice
+
+docker ps
+
+docker stop b82f28fd7a7a
+
+docker ps
+
+docker start b82f28fd7a7a
+
+docker push lucasarodrigues/platformservice
+
+// docker logout
+// docker login
