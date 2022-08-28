@@ -17,6 +17,8 @@ builder.Services.AddDbContext<AppDbContext>(opt =>
 builder.Services.AddScoped<IPlatformRepo,PlatformRepo>();
 builder.Services.AddHttpClient<ICommandDataClient,HttpCommandDataClient>();
 
+Console.WriteLine($"---> CommandService Endpoint {builder.Configuration["CommandService"]}");
+
 var app = builder.Build();
 
 
