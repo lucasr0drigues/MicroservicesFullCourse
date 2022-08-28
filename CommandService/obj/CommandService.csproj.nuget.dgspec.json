@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Dev\\LesJackson\\MicroservicesFullCourse\\CommandService\\CommandService.csproj": {}
+    "C:\\Dev\\LesJackson\\MicroservicesFullCourse\\CommandService\\CommandService.csproj": {}
   },
   "projects": {
-    "c:\\Dev\\LesJackson\\MicroservicesFullCourse\\CommandService\\CommandService.csproj": {
+    "C:\\Dev\\LesJackson\\MicroservicesFullCourse\\CommandService\\CommandService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Dev\\LesJackson\\MicroservicesFullCourse\\CommandService\\CommandService.csproj",
+        "projectUniqueName": "C:\\Dev\\LesJackson\\MicroservicesFullCourse\\CommandService\\CommandService.csproj",
         "projectName": "CommandService",
-        "projectPath": "c:\\Dev\\LesJackson\\MicroservicesFullCourse\\CommandService\\CommandService.csproj",
+        "projectPath": "C:\\Dev\\LesJackson\\MicroservicesFullCourse\\CommandService\\CommandService.csproj",
         "packagesPath": "C:\\Users\\lucas\\.nuget\\packages\\",
-        "outputPath": "c:\\Dev\\LesJackson\\MicroservicesFullCourse\\CommandService\\obj\\",
+        "outputPath": "C:\\Dev\\LesJackson\\MicroservicesFullCourse\\CommandService\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
