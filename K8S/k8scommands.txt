@@ -16,3 +16,17 @@ kubectl get deployments
 
 kubectl apply -f .\platforms-np-srv.yaml
 
+
+-------
+
+kubectl rollout restart deployment platforms-depl
+
+--------
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/controller-v1.3.0/deploy/static/provider/aws/deploy.yaml
+
+kubectl get namespace
+
+kubectl get pods --namespace=ingress-nginx
+
+kubectl apply -f ingress-srv.yaml
