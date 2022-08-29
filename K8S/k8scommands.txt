@@ -48,3 +48,13 @@ kubectl get services
 
 kubectl get pods
 
+-----------
+
+kubectl apply -f .\rabbitmq-depl.yaml
+
+kubectl get services
+
+kubectl get deployments
+
+kubectl get pods
+
