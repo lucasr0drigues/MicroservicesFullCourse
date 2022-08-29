@@ -30,3 +30,10 @@ kubectl get namespace
 kubectl get pods --namespace=ingress-nginx
 
 kubectl apply -f ingress-srv.yaml
+
+
+---------
+
+kubectl get storageclass
+
+kubectl apply -f .\local-pvc.yaml
