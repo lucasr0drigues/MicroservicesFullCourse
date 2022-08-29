@@ -10,10 +10,23 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 builder.Services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-builder.Services.AddDbContext<AppDbContext>(opt =>
+
+if(builder.Environment.IsProduction())
 {
-    opt.UseInMemoryDatabase("InMem");
-});
+    Console.WriteLine("---> Using SqlServer Db");
+    builder.Services.AddDbContext<AppDbContext>(opt =>
+    {
+        opt.UseSqlServer(builder.Configuration.GetConnectionString("PlatformsConn"));
+    });
+}
+else
+{
+    Console.WriteLine("---> Using InMem Db");
+    builder.Services.AddDbContext<AppDbContext>(opt =>
+    {
+        opt.UseInMemoryDatabase("InMem");
+    });
+}
 builder.Services.AddScoped<IPlatformRepo,PlatformRepo>();
 builder.Services.AddHttpClient<ICommandDataClient,HttpCommandDataClient>();
 
@@ -28,7 +41,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-PrepDb.PrepPopulation(app);
+PrepDb.PrepPopulation(app,app.Environment.IsProduction());
 
 //app.UseHttpsRedirection();
 
