@@ -1,6 +1,7 @@
 using AutoMapper;
 using CommandService.Models;
 using Grpc.Net.Client;
+using PlatformService;
 
 namespace CommandService.SyncDataServices.Grpc
 {
